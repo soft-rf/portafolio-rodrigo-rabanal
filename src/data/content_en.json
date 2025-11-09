@@ -1,0 +1,71 @@
+{
+  "header": {
+    "profile": "Professional Profile",
+    "contact": "Contact"
+  },
+  "personal": {
+    "name": "Rodrigo Rabanal Fernández",
+    "role": "Developer - Quality Assurance",
+    "bio": [
+      "I am 28 years old and a great coffee lover.",
+      "Software Developer student at UNSAM - Argentina."
+    ]
+  },
+  "mission": {
+    "title": "Mission",
+    "text": "I fully dedicate myself to each project, even if I'm the sole team member, and I value the synergy of teamwork, convinced that the best results arise from collaboration and shared commitment."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Web Development - From conceptualization to deployment.",
+    "ecommerce": {
+      "title": "Ecommerce - Somos Baristas",
+      "description": {
+        "line1": "Complete administration system for an online coffee shop.",
+        "features": [
+          "Real-time product and inventory management.",
+          "Administrator panel - Business owner.",
+          "Integration with Mercado Pago."
+        ]
+      },
+      "link": "Somos Baristas",
+      "documentation": "Documentation"
+    },
+    "duroPisos": {
+      "title": "Duro Pisos SRL",
+      "description": {
+        "line1": "SPA to strengthen the company's digital presence.",
+        "features": [
+          "Product catalog presentation.",
+          "Interactive project portfolio.",
+          "Modern and responsive design."
+        ]
+      },
+      "link": "Duro Pisos",
+      "documentation": "Documentation"
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "technical": [
+      "Frontend (HTML, CSS, JavaScript (React), Responsive Design, UI/UX Implementation.",
+      "Backend - Node.js & Express.js. For creating RESTful APIs - Supabase: BaaS.",
+      "Functional and Regression Test Automation: Playwright.",
+      "API Test Automation: With Postman.",
+      "CI/CD for Testing: With Jenkins, GitHub Actions."
+    ],
+    "soft": {
+      "title": "Soft Skills",
+      "list": [
+        "Analytical approach to transform complex challenges into efficient solutions.",
+        "Passion for learning and applying new technologies for continuous improvement.",
+        "Ability to prioritize tasks and efficiently meet objectives."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "email": "rabanallfernandezrodrigo.sofi@gmail.com",
+    "soft": "Soft:rf"
+  }
+}

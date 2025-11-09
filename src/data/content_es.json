@@ -1,0 +1,71 @@
+{
+  "header": {
+    "profile": "Perfil Profesional",
+    "contact": "Contacto"
+  },
+  "personal": {
+    "name": "Rodrigo Rabanal Fernández",
+    "role": "Developer - Quality Assurance",
+    "bio": [
+      "Tengo 28 años y amante del buen café.",
+      "Estudiante de la carrera de desarrollador de software en la UNSAM - Argentina."
+    ]
+  },
+  "mission": {
+    "title": "Misión",
+    "text": "Me dedico a fondo en cada proyecto así sea el único miembro el equipo y valoro la sinergia del trabajo en equipo, convencido de que los mejores resultados nacen de la colaboración y el compromiso compartido."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Desarrollo Web - Desde la conceptualización hasta el despliegue.",
+    "ecommerce": {
+      "title": "Ecommerce - Somos Baristas",
+      "description": {
+        "line1": "Sistema completo de administración para una tienda de café online.",
+        "features": [
+          "Gestión de productos e inventario en tiempo real.",
+          "Panel de administrador - Dueño de negocio.",
+          "Integración con Mercado pago."
+        ]
+      },
+      "link": "Somos Baristas",
+      "documentation": "Documentación"
+    },
+    "duroPisos": {
+      "title": "Duro Pisos SRL",
+      "description": {
+        "line1": "SPA para fortalecer la presencia digital de la empresa.",
+        "features": [
+          "Presentación de catálogo de productos.",
+          "Portafolio de proyectos interactivo.",
+          "Diseño moderno y responsivo."
+        ]
+      },
+      "link": "Duro Pisos",
+      "documentation": "Documentación"
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "technical": [
+      "Frontend (HTML, CSS, JavaScript (React), Responsive Design, UI/UX Implementation.",
+      "Backend - Node.js & Express.js. Para crear las APIs RESTful - Supabase: Baas",
+      "Automatización de Pruebas Funcionales y de Regresión: Playwright.",
+      "Automatización de Pruebas de API: Con Postman.",
+      "CI/CD de Pruebas: Con Jenkins, GitHub Actions."
+    ],
+    "soft": {
+      "title": "Habilidades blandas",
+      "list": [
+        "Enfoque analítico para transformar desafíos complejos en soluciones eficientes.",
+        "Pasión por aprender y aplicar nuevas tecnologías para la mejora constante.",
+        "Capacidad para priorizar tareas y cumplir objetivos de manera eficiente."
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contacto",
+    "email": "rabanallfernandezrodrigo.sofi@gmail.com",
+    "soft": "Soft:rf."
+  }
+}
