@@ -1,9 +1,9 @@
 :root {
-  --primary-bg: #1a1a1a;
+  --primary-bg: #121212;
   --secondary-bg: #2a2a2a;
   --primary-text: #ffffff;
   --secondary-text: #a0a0a0;
-  --accent-color: #008612;
+  --accent-color: #a7a7a7;
   --highlight-react: #61dafb;
   --highlight-node: #339933;
   --highlight-express: #000000;

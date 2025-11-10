@@ -71,9 +71,8 @@ p {
 .profile-pic {
   width: 160px; /* Slightly larger pic */
   height: 160px;
-  border-radius: 50%;
+  border-radius: 15%;
   object-fit: cover;
-  border: 3px solid var(--accent-color);
 }
 
 .profile-info h2 {
@@ -96,7 +95,7 @@ p {
 /* Mission Section */
 .mission {
   background-color: var(--secondary-bg);
-  padding: 1.5rem;
+  padding: 1.2rem;
   border-radius: 8px;
   flex: 1; /* Take up remaining space */
   margin-top: 0; /* Remove margin as it's handled by container */
@@ -112,19 +111,21 @@ p {
 /* Projects Section */
 .projects {
   margin: 1rem 0;
+  text-align: center;
 }
 
 .projects h2 {
+  display: inline;
   font-size: 1.8rem;
-  text-align: center;
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem; /* Añade un espacio entre el título y el subtítulo */
 }
 
 .projects .subtitle {
-  text-align: center;
+  display: inline;
   color: var(--secondary-text);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem; /* Esto no tendrá efecto en 'inline', pero lo dejamos por si se cambia */
   font-size: 1rem;
 }
 
@@ -135,6 +136,7 @@ p {
     minmax(320px, 1fr)
   ); /* Slightly larger cards */
   gap: 2rem;
+  margin-top: 1.2rem;
 }
 
 .card {
@@ -151,21 +153,27 @@ p {
 
 .card h3 {
   margin-top: 0;
-  color: var(--accent-color);
-  font-size: 1.5rem;
+  color: var(--primary-text);
+  font-size: 1.4rem;
+}
+
+.card ul {
+  text-align: left;
+  padding-left: 1rem;
 }
 
 .card-links {
   margin-top: 1.5rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.8rem;
+  justify-content: center;
 }
 
 .card-links a {
-  background-color: var(--accent-color);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(0, 0, 0, 0.8);
   color: var(--primary-text);
   padding: 0.6rem 1.2rem; /* Larger buttons */
-  border-radius: 5px;
+  border-radius: 10px;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -173,7 +181,7 @@ p {
 }
 
 .card-links a:hover {
-  background-color: #0056b3;
+  background-color: #000000;
   text-decoration: none;
 }
 
@@ -205,7 +213,7 @@ p {
 .skills-list h3,
 .soft-skills-list h3 {
   margin-top: 0;
-  color: var(--accent-color);
+  color: var(--primary-text);
   font-size: 1.3rem;
 }
 
