@@ -179,6 +179,131 @@ p {
   gap: 0.5rem;
   font-size: 1rem;
 }
+/* Estilo para el botón de documentación para que se parezca a un enlace */
+.doc-button {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5), inset 0 0 1px rgba(0, 0, 0, 0.8);
+  color: var(--primary-text);
+  padding: 0.6rem 1.2rem; /* Larger buttons */
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: inherit; /* Hereda la fuente del resto de la página */
+}
+
+.doc-button:hover {
+  background-color: #000000;
+  text-decoration: none;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--secondary-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  animation: slide-down 0.3s ease-out;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: var(--primary-text);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.doc-modal-content h3 {
+  margin-top: 0;
+  font-size: 1.5rem;
+  color: var(--accent-color);
+}
+
+.doc-modal-content h4 {
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-text);
+}
+
+.architecture-section {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.4rem;
+}
+
+.doc-modal-content ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.doc-modal-content li {
+  margin-bottom: 0.5rem;
+}
+
+.tech-columns {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.tech-column {
+  flex: 1;
+}
+
+.repo-link-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.repo-link-container a {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #bb86fc; /* Color púrpura para resaltar */
+  font-size: 1.2rem; /* Letra más grande */
+  transition: color 0.2s;
+}
+
+.repo-link-container a:hover {
+  color: #d0a3fc; /* Un púrpura más claro en hover */
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
 .card-links a:hover {
   background-color: #000000;

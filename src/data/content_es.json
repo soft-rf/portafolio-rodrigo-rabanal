@@ -29,7 +29,26 @@
         ]
       },
       "link": "Somos Baristas",
-      "documentation": "Documentación"
+      "documentation": "Documentación",
+      "documentationContent": {
+        "title": "Tecnologías y Arquitectura",
+        "architecture": "Single-Page Application (SPA) con una arquitectura basada en componentes, lo que garantiza una experiencia de usuario fluida sin recargas de página constantes.",
+        "frontend": [
+          "React & JavaScript",
+          "CSS",
+          "React Testing Library & Jest",
+          "(pruebas unitarias y de integración)"
+        ],
+        "backend": [
+          "Node.js & Express.js (APIs RESTful)",
+          "Supabase (BaaS)",
+          "PostgreSQL",
+          "Postman"
+        ],
+        "integration": "Mercado pago: API Checkout Pro.",
+        "repoText": "Repositorio",
+        "repoLink": "https://github.com/soft-rf/somosBaristas-app"
+      }
     },
     "duroPisos": {
       "title": "Duro Pisos SRL",
@@ -42,11 +61,21 @@
         ]
       },
       "link": "Duro Pisos",
-      "documentation": "Documentación"
+      "documentation": "Documentación",
+      "documentationContent": {
+        "title": "Tecnologías y Arquitectura (Duro Pisos)",
+        "architecture": "Próximamente...",
+        "frontend": ["Próximamente..."],
+        "backend": ["Próximamente..."],
+        "integration": null,
+        "repoText": "Repositorio",
+        "repoLink": "#"
+      }
     }
   },
   "skills": {
     "title": "Habilidades",
+    "technicalTitle": "Técnicas",
     "technical": [
       "Frontend (HTML, CSS, JavaScript (React), Responsive Design, UI/UX Implementation.",
       "Backend - Node.js & Express.js. Para crear las APIs RESTful - Supabase: Baas",
@@ -55,7 +84,7 @@
       "CI/CD de Pruebas: Con Jenkins, GitHub Actions."
     ],
     "soft": {
-      "title": "Habilidades blandas",
+      "title": "Blandas",
       "list": [
         "Enfoque analítico para transformar desafíos complejos en soluciones eficientes.",
         "Pasión por aprender y aplicar nuevas tecnologías para la mejora constante.",

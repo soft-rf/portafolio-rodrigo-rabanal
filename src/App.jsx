@@ -3,12 +3,8 @@ import "./App.css";
 import contentEs from "./data/content_es.json";
 import contentEn from "./data/content_en.json";
 import profilePic from "./assets/foto-rodrigo.png";
-import {
-  FaGithub,
-  FaLinkedin,
-  FaEnvelope,
-  FaChevronRight,
-} from "react-icons/fa";
+import ProjectCard from "./components/ProjectCard"; // Importamos el nuevo componente
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const content = {
   es: contentEs,
@@ -117,56 +113,18 @@ function App() {
           <h2>{c.projects.title}</h2>
           <p className="subtitle">{c.projects.subtitle}</p>
           <div className="project-cards">
-            <div className="card">
-              <div className="card-content">
-                <h3>{c.projects.ecommerce.title}</h3>
-                <p>{c.projects.ecommerce.description.line1}</p>
-                <ul>
-                  {c.projects.ecommerce.description.features.map(
-                    (feature, index) => (
-                      <li key={index}>{feature}</li>
-                    )
-                  )}
-                </ul>
-              </div>
-              <div className="card-links">
-                <a
-                  href="https://somosbaristas.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {c.projects.ecommerce.link} <FaChevronRight />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  {c.projects.ecommerce.documentation} <FaChevronRight />
-                </a>
-              </div>
-            </div>
-            <div className="card">
-              <div className="card-content">
-                <h3>{c.projects.duroPisos.title}</h3>
-                <p>{c.projects.duroPisos.description.line1}</p>
-                <ul>
-                  {c.projects.duroPisos.description.features.map(
-                    (feature, index) => (
-                      <li key={index}>{feature}</li>
-                    )
-                  )}
-                </ul>
-              </div>
-              <div className="card-links">
-                <a
-                  href="https://rodrigofernandezqa.github.io/duropisos/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {c.projects.duroPisos.link} <FaChevronRight />
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  {c.projects.duroPisos.documentation} <FaChevronRight />
-                </a>
-              </div>
-            </div>
+            <ProjectCard
+              project={{
+                ...c.projects.ecommerce,
+                linkUrl: "https://somosbaristas.com",
+              }}
+            />
+            <ProjectCard
+              project={{
+                ...c.projects.duroPisos,
+                linkUrl: "https://rodrigofernandezqa.github.io/duropisos/",
+              }}
+            />
           </div>
         </section>
 
@@ -174,7 +132,7 @@ function App() {
           <h2>{c.skills.title}</h2>
           <div className="skills-container">
             <div className="skills-list">
-              <h3>Habilidades Técnicas</h3>
+              <h3>{c.skills.technicalTitle}</h3>
               <ul>
                 {c.skills.technical.map((skill, index) => (
                   <li key={index}>

@@ -29,7 +29,26 @@
         ]
       },
       "link": "Somos Baristas",
-      "documentation": "Documentation"
+      "documentation": "Documentation",
+      "documentationContent": {
+        "title": "Technologies and Architecture",
+        "architecture": "Single-Page Application (SPA) with a component-based architecture, ensuring a smooth user experience without constant page reloads.",
+        "frontend": [
+          "React & JavaScript",
+          "CSS",
+          "React Testing Library & Jest",
+          "(unit and integration testing)"
+        ],
+        "backend": [
+          "Node.js & Express.js (RESTful APIs)",
+          "Supabase (BaaS)",
+          "PostgreSQL",
+          "Postman"
+        ],
+        "integration": "Mercado Pago: API Checkout Pro.",
+        "repoText": "Repository",
+        "repoLink": "https://github.com/soft-rf/somosBaristas-app"
+      }
     },
     "duroPisos": {
       "title": "Duro Pisos SRL",
@@ -42,11 +61,21 @@
         ]
       },
       "link": "Duro Pisos",
-      "documentation": "Documentation"
+      "documentation": "Documentation",
+      "documentationContent": {
+        "title": "Technologies and Architecture (Duro Pisos)",
+        "architecture": "Coming soon...",
+        "frontend": ["Coming soon..."],
+        "backend": ["Coming soon..."],
+        "integration": null,
+        "repoText": "Repository",
+        "repoLink": "#"
+      }
     }
   },
   "skills": {
     "title": "Skills",
+    "technicalTitle": "Technical",
     "technical": [
       "Frontend (HTML, CSS, JavaScript (React), Responsive Design, UI/UX Implementation.",
       "Backend - Node.js & Express.js. For creating RESTful APIs - Supabase: BaaS.",
@@ -55,7 +84,7 @@
       "CI/CD for Testing: With Jenkins, GitHub Actions."
     ],
     "soft": {
-      "title": "Soft Skills",
+      "title": "Soft",
       "list": [
         "Analytical approach to transform complex challenges into efficient solutions.",
         "Passion for learning and applying new technologies for continuous improvement.",
