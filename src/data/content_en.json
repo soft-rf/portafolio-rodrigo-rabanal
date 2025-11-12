@@ -1,6 +1,6 @@
 {
   "header": {
-    "profile": "Professional Profile",
+    "profile": "Profile",
     "contact": "Contact"
   },
   "personal": {
@@ -75,6 +75,7 @@
   },
   "skills": {
     "title": "Skills",
+    "subtitle": "I enjoy learning new technologies",
     "technicalTitle": "Technical",
     "technical": [
       "Frontend (HTML, CSS, JavaScript (React), Responsive Design, UI/UX Implementation.",
@@ -94,7 +95,6 @@
   },
   "contact": {
     "title": "Contact",
-    "email": "rabanalfernandezrodrigo.soft@gmail.com",
-    "soft": "soft-rf"
+    "email": "rabanalfernandezrodrigo.soft@gmail.com"
   }
 }

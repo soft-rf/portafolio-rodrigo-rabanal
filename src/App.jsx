@@ -2,9 +2,15 @@ import { useState } from "react";
 import "./App.css";
 import contentEs from "./data/content_es.json";
 import contentEn from "./data/content_en.json";
-import profilePic from "./assets/foto-rodrigo.png";
-import ProjectCard from "./components/ProjectCard"; // Importamos el nuevo componente
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import profilePic from "./assets/foto-rodrigo2.png";
+import ProjectCard from "./components/ProjectCard";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaEye,
+  FaCopy,
+} from "react-icons/fa";
 
 const content = {
   es: contentEs,
@@ -44,10 +50,20 @@ const HighlightedSkill = ({ text }) => {
 
 function App() {
   const [language, setLanguage] = useState("es");
+  const [isVideoModalOpen, setVideoModalOpen] = useState(false);
   const c = content[language];
 
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === "es" ? "en" : "es"));
+  };
+
+  const handleProfileClick = () => {
+    console.log("Opening video modal");
+    setVideoModalOpen(true);
+  };
+
+  const handleCopy = (text) => {
+    navigator.clipboard.writeText(text);
   };
 
   return (
@@ -83,12 +99,15 @@ function App() {
       <main>
         <div className="profile-mission-container">
           <section className="profile">
-            <div className="profile-pic-container">
+            <div className="profile-pic-container" onClick={handleProfileClick}>
               <img
                 src={profilePic}
                 className="profile-pic"
                 alt="Rodrigo Rabanal Fernández"
               />
+              <div className="profile-pic-overlay">
+                <FaEye className="eye-icon" />
+              </div>
             </div>
             <div className="profile-info">
               <h2>{c.personal.name}</h2>
@@ -130,6 +149,7 @@ function App() {
 
         <section id="skills" className="skills">
           <h2>{c.skills.title}</h2>
+          <p className="subtitle">{c.skills.subtitle}</p>
           <div className="skills-container">
             <div className="skills-list">
               <h3>{c.skills.technicalTitle}</h3>
@@ -155,30 +175,37 @@ function App() {
 
       <footer id="contact" className="footer">
         <h2>{c.contact.title}</h2>
-        <p>{c.contact.email}</p>
-        <div className="contact-links">
-          <a href={`mailto:${c.contact.email}`} aria-label="Email">
-            <FaEnvelope />
-          </a>
-          <a
-            href="https://www.linkedin.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="LinkedIn"
+        <div className="copyable-item">
+          <span>{c.contact.email}</span>
+          <button
+            onClick={() => handleCopy(c.contact.email)}
+            className="copy-button"
+            aria-label="Copiar email"
           >
-            <FaLinkedin />
-          </a>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="GitHub"
-          >
-            <FaGithub />
-          </a>
+            <FaCopy />
+          </button>
         </div>
-        <p>{c.contact.soft}</p>
       </footer>
+
+      {isVideoModalOpen && (
+        <div className="modal-overlay" onClick={() => setVideoModalOpen(false)}>
+          <div
+            className="modal-content video-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="modal-close"
+              onClick={() => setVideoModalOpen(false)}
+            >
+              &times;
+            </button>
+            <h3>{c.videoModal.title}</h3>
+            <div className="video-placeholder">
+              {/* Aquí irá tu componente de video en el futuro */}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

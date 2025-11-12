@@ -1,6 +1,6 @@
 {
   "header": {
-    "profile": "Perfil Profesional",
+    "profile": "Perfil",
     "contact": "Contacto"
   },
   "personal": {
@@ -75,6 +75,7 @@
   },
   "skills": {
     "title": "Habilidades",
+    "subtitle": "Disfruto de aprender nuevas tecnologías",
     "technicalTitle": "Técnicas",
     "technical": [
       "Frontend (HTML, CSS, JavaScript (React), Responsive Design, UI/UX Implementation.",
@@ -94,7 +95,9 @@
   },
   "contact": {
     "title": "Contacto",
-    "email": "rabanalfernandezrodrigo.soft@gmail.com",
-    "soft": "soft-rf"
+    "email": "rabanalfernandezrodrigo.soft@gmail.com"
+  },
+  "videoModal": {
+    "title": "Video de Presentación (Próximamente)"
   }
 }
